@@ -88,9 +88,12 @@
                 </div>
               </div>
             </div>
-            <label class="upload-label btn btn-light px-5 btn-lg">
-           <img src="./img/uploadCloud.svg" alt="">   <div>Upload file</div>
-              <input type="file" name="file" id="mainFile" class="btn btn-block btn-lg btn primary d-none"/>
+            <label class="upload-label btn btn-light px-5 btn-lg upld position-relative">
+                <div class="lds-ring mn-center"><div></div><div></div><div></div><div></div></div>
+           <img src="./img/uploadCloud.svg" alt="" class="plx">
+          
+           <div class="lx">Upload file</div> <div class="lx2">Uploading ...</div>
+              <input type="file" name="file" id="mainFile" class="btn btn-block btn-lg btn primary d-none" onchange="uploadFile(this)" />
             </label>
           </div>
         </div>
@@ -320,8 +323,8 @@
 function verifyURL(){
 $(".mln").toggleClass("loading")
 $.ajax({
-  method:"get",
   url:"/",
+  method:"get",
   data:"url="+$("#mainURL").val(),
   success:function(data){
 
@@ -336,16 +339,22 @@ $(".mln").toggleClass("loading")
 }
 
 
-function uploadFile(){
-$(".mln").toggleClass("loading")
+function uploadFile(el){
+  var formData=new FormData()
+  formData.append("file",el.files[0])
+$(".upld").toggleClass("loading")
+
 $.ajax({
-  method:"get",
-  url:"/",
-  data:"url="+$("#mainURL").val(),
+  url:"http://localhost/php/index.php",
+  method:"post",
+  data:formData,
+  processData: false,  // tell jQuery not to process the data
+  contentType: false,  // tell jQuery not to set contentType
   success:function(data){
 
 setTimeout(function(){
-$(".mln").toggleClass("loading")
+
+$(".upld").toggleClass("loading")
   alert("successfully Verified")
 },2000)
 

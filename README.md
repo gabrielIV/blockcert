@@ -1,5 +1,10 @@
 # Blockcert
 
+This is an open standard for building apps that issue and verify blockchain-based official records.
+These may include certificates for civic records, academic credentials, professional licenses, workforce development, and more.
+Blockcerts consists of open-source libraries, tools, and mobile apps enabling a decentralized,
+standards-based, recipient-centric ecosystem, enabling trustless verification through blockchain technologies
+
 ## Usage
 
 ### Basic Usage

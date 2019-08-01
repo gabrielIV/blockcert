@@ -85,3 +85,33 @@ body {
 
 .upload-label {
 }
+
+.mn-center {
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 25px);
+  z-index: 100;
+  opacity: 0;
+}
+
+.loading .mn-center {
+  opacity: 1;
+}
+
+.lx2 {
+  display: none;
+}
+
+.loading .lx {
+  display: none;
+}
+
+.loading .lx2 {
+  display: inline-block;
+}
+
+.loading .plx {
+  opacity: 0;
+  display: block;
+  margin-bottom: 10px;
+}
