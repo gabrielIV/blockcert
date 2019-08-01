@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blockcert</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <!-- <div style='position:relative; border:1px solid red; margin-top:100px;'> -->
+      <a class="navbar-brand"style="position:left"><a href="/" class="position-relative">
+        <img src="img/ulogo.png" class="main-logo logo-dark" width="200" alt="logo" >
+        <img src="img/logo_white.png" class="main-logo" width="200" alt="logo" >
+      </a>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">KENET BLOCKCERT</a> -->
+    <!-- </div> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+             <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h2 class="hero-title text-white font-weight-bold">Strathmore University Blockcert</h1>
+            <blockcerts-verifier display-mode="full" theme="dark"></blockcerts-verifier>
+          <!-- <hr class="divider my-4"> -->
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <!-- <p class="text-white-75 font-weight-light mb-5">Kenet blockcert provides a complete system to issue official records using a blockchain-anchored format that is instantly -->
+<!-- verifiable anywhere in thes world.!</p> -->
+          <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find more</a><div class="col-md-10 col-lg-8 col-xl-7 mx-auto"> -->
+            <div class="my-5 mln">
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0 position-relative">
+                  <input type="url" class="form-control form-control-lg" id="mainURL" placeholder="Enter url here...">
+                  <div class="lds-ring mn-rign"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <div class="col-12 col-md-3">
+
+                  <button type="submit" id="verify-button" class="btn btn-block btn-lg btn-primary" onclick="verifyURL()"> <span>Verify</span><span class="ols">ing ....</span> </button>
+                </div>
+              </div>
+            </div>
+            <label class="upload-label btn btn-light px-5 btn-lg">
+           <img src="./img/uploadCloud.svg" alt="">   <div>Upload file</div>
+              <input type="file" name="file" id="mainFile" class="btn btn-block btn-lg btn primary d-none"/>
+            </label>
+          </div>
+        </div>
+        <!-- // <body style="margin: 0px; background: #0e0e0e;" data-gr-c-s-loaded="true"><img style="-webkit-user-select: none;" src="https://cdn.dribbble.com/users/141880/screenshots/3145495/steps.gif"></body> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-light" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-dark mt-0 mb-5"> BLOCKCERT</h2>
+          <p class="-20 mb-4">This is an open standard for building apps that issue and verify blockchain-based official records.
+             These may include certificates for civic records, academic credentials, professional licenses, workforce development, and more.
+             Blockcerts consists of open-source libraries, tools, and mobile apps enabling a decentralized,
+                standards-based, recipient-centric ecosystem, enabling trustless verification through blockchain technologies</p>
+             <p class="-20 mb-4">Blockcerts uses and encourages consolidation on open standards.
+               Blockcerts is committed to self-sovereign identity of all participants, and enabling recipient control of their claims through easy-to-use tools such as the certificate wallet (mobile app).
+               Blockcerts is also committed to availability of credentials, without single points of failure.
+               These open-source repos may be utilized by other research projects and commercial developers.
+                It contains components for creating, issuing, viewing, and verifying certificates across any blockchain.
+                 These components form all the parts needed for a complete ecosystem. .</p>
+            <p class="text-muted mb-0">Know that records are secure, tamper proof,and vendor independent.!</p>
+          <!-- <h5 class=" mt-0">Enter URL here</h5>
+          <hr class="divider light my-4">
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Verify</a> -->
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0 mb-5">HOW IT WORKS</h2>
+
+      <!-- <p>
+        <img src="img/howitworks.jpg" img width="500" alt/>
+      </p> -->
+      <div class="card card-cascade wider reverse">
+        <div class="view view-cascade overlay">
+          <img class="card-img-top" src="img/howitworks.jpg" img width="200px" alt="card image cap">
+          <a href="#">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body card-body-cascade text-centre">
+          <h4 class="card-title" ><strong>process</strong></h4>
+          <h6 class="font-weight-bold indigo-text py-2">photography</h6>
+          <p class="card-text">this is how it works</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <!-- <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Improve Efficiency</h3>
+            <p class="text-muted mb-0">Blockchain-anchored records don’t require middlemen to send or verify.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Prevent Fraud</h3>
+            <p class="text-muted mb-0">Draw attention to your programs and your brand with records that can be shared online.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Increase Security</h3>
+            <p class="text-muted mb-0">Know that records are secure, tamper proof,and vendor independent.!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Gain Insight</h3>
+            <p class="text-muted mb-0">Build reports to better understand your credentialing trends</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Portfolio Section -->
+  <!-- <section id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Find our patners here</h2>
+      <!-- <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a> -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Ready to join the blockcert community</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>235 789 678</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@blockcert.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-6">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - strathmore University Blockcert</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+<script>
+function verifyURL(){
+$(".mln").toggleClass("loading")
+$.ajax({
+  method:"get",
+  url:"/",
+  data:"url="+$("#mainURL").val(),
+  success:function(data){
+
+setTimeout(function(){
+$(".mln").toggleClass("loading")
+  alert("successfully Verified")
+},2000)
+
+  }
+})
+
+}
+
+
+function uploadFile(){
+$(".mln").toggleClass("loading")
+$.ajax({
+  method:"get",
+  url:"/",
+  data:"url="+$("#mainURL").val(),
+  success:function(data){
+
+setTimeout(function(){
+$(".mln").toggleClass("loading")
+  alert("successfully Verified")
+},2000)
+
+  }
+})
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
